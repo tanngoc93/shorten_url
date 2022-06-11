@@ -1,10 +1,8 @@
-ARG RUBY_VERSION
-
-FROM ruby:$RUBY_VERSION
+FROM ruby:3.1.2
 
 ENV PORT=3000 \
     RAILS_ENV=development \
-    APP_DIR=/home/app/html \
+    APP_DIR=/app \
     BUNDLE_PATH=/bundle/vendor
 
 RUN apt-get update -qq \
