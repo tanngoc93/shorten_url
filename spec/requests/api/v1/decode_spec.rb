@@ -26,7 +26,7 @@ describe 'GET /api/v1/decode' do
       }
 
       expect(response.status).to eq(404)
-      
+
       # response contain error message
       json = JSON.parse(response.body).deep_symbolize_keys
       expect(json[:message]).to eq('Url fetched unsuccessfully')
