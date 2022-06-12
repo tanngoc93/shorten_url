@@ -38,8 +38,8 @@ describe 'POST /api/v1/encode' do
     end
   end
 
-  context 'encode with wrong original_url' do
-    it "should return" do
+  context 'encode with correct original_url' do
+    it "should return created successfully" do
       post '/api/v1/encode', params: {
         original_url: "https://www.google.com/"
       }

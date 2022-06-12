@@ -56,7 +56,7 @@ docker-compose up
 ### 3. Endpoints
 #### Encode(method: POST)
 ```html
-/api/v1/encode
+https://ngocnt-shorturl.herokuapp.com/api/v1/encode
 ```
 
 * Parameters
@@ -68,7 +68,7 @@ docker-compose up
 
 #### Decode(method: GET)
 ```html
-/api/v1/decode
+https://ngocnt-shorturl.herokuapp.com/api/v1/decode
 ```
 
 * Parameters

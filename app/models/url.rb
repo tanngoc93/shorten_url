@@ -9,7 +9,7 @@ class Url < ApplicationRecord
 
   def set_token
     begin
-      self.token = SecureRandom.urlsafe_base64(6)
+      self.token = SecureRandom.base58(6)
     end while self.class.exists?(token: token) 
   end
 end
