@@ -12,3 +12,28 @@
 #### How to install
 
 * Please read `README-INSTALL.md`
+
+#### Endpoints
+* Encode(method: POST)
+```html
+https://ngocnt-shorturl.herokuapp.com/api/v1/encode
+```
+
+* Parameters
+```html
+{
+  original_url: 'https://www.google.com/'
+}
+```
+
+* Decode(method: GET)
+```html
+https://ngocnt-shorturl.herokuapp.com/api/v1/decode
+```
+
+* Parameters
+```html
+{
+  token: 'ikWYAzAU'
+}
+```
