@@ -54,12 +54,26 @@ docker-compose up
 ```
 
 ### 3. Endpoints
-* Encode
+#### Encode(method: POST)
 ```html
 /api/v1/encode
 ```
 
-* Decode
+* Parameters
+```html
+{
+  original_url: 'https://www.google.com/'
+}
+```
+
+#### Decode(method: GET)
 ```html
 /api/v1/decode
+```
+
+* Parameters
+```html
+{
+  token: 'ikWYAzAU'
+}
 ```
