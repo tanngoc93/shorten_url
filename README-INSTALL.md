@@ -53,7 +53,13 @@ docker-compose build
 docker-compose up
 ```
 
-* Access
+### 3. Endpoints
+* Encode
 ```html
-http://localhost:3000
+/api/v1/encode
+```
+
+* Decode
+```html
+/api/v1/decode
 ```
